@@ -8,6 +8,8 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                     pwd
+                    echo $(git -version)
+                    echo $(docker -version)
                 '''
             }
         }
